@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Season 的小站</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif;
+    background: #f6f7f9;
+    color: #2c3e50;
+    line-height: 1.7;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  header {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: #fff;
+    text-align: center;
+    padding: 72px 20px 56px;
+  }
+  header h1 { font-size: 40px; font-weight: 700; letter-spacing: 1px; }
+  header p { font-size: 17px; margin-top: 14px; opacity: 0.92; }
+  main {
+    flex: 1;
+    max-width: 860px;
+    margin: -32px auto 0;
+    padding: 0 20px 60px;
+    width: 100%;
+  }
+  .card {
+    background: #fff;
+    border-radius: 14px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    padding: 36px;
+    margin-bottom: 26px;
+  }
+  .card h2 { font-size: 21px; color: #667eea; margin-bottom: 14px; }
+  .card ul { padding-left: 22px; }
+  .card li { margin: 8px 0; }
+  .badge {
+    display: inline-block;
+    background: #eef2ff;
+    color: #764ba2;
+    font-size: 13px;
+    padding: 4px 12px;
+    border-radius: 999px;
+    margin: 0 6px 6px 0;
+  }
+  footer {
+    text-align: center;
+    padding: 24px;
+    font-size: 13px;
+    color: #8a94a6;
+  }
+  a { color: #667eea; }
+  @media (max-width: 520px) {
+    header h1 { font-size: 30px; }
+    .card { padding: 24px; }
+  }
+</style>
+</head>
+<body>
+<header>
+  <h1>Season 的小站</h1>
+  <p>这里是 <code>season.loc.cc</code> · 我的 GitHub Pages 主页</p>
+</header>
+
+<main>
+  <section class="card">
+    <h2>关于我</h2>
+    <p>你好，我是 Season。这个站点由 GitHub Pages 免费托管，绑定了自定义域名 <strong>season.loc.cc</strong>。目前正在搭建中，内容会陆续更新。</p>
+    <div style="margin-top:12px;">
+      <span class="badge">GitHub Pages</span>
+      <span class="badge">自定义域名</span>
+      <span class="badge">HTTPS 加密</span>
+    </div>
+  </section>
+
+  <section class="card">
+    <h2>这个站点的由来</h2>
+    <ul>
+      <li>注册了 NodeLoc 社区的免费子域名 <strong>season.loc.cc</strong></li>
+      <li>把 DNS 的 CNAME 记录指到 <code>用户名.github.io</code></li>
+      <li>在 GitHub 仓库的 Pages 设置里登记自定义域名</li>
+      <li>开启强制 HTTPS，让访问更安全</li>
+    </ul>
+  </section>
+
+  <section class="card">
+    <h2>接下来想放什么</h2>
+    <p>这还在准备中，计划放一些我感兴趣的内容。先让站点跑起来，再慢慢填满它。</p>
+  </section>
+</main>
+
+<footer>© 2026 Season · 由 GitHub Pages 驱动 · season.loc.cc</footer>
+</body>
+</html>
